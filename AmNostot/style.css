@@ -332,9 +332,10 @@ transition: all ease 0.4s;
         text-align: center;
     }
     .footer{
-        transform: translate(-0%, 8% );
-    
-  }
+        transform: translate(-0%, 8% );    
+    }
+
+
 }
 @media(max-width:970px){
     
@@ -363,7 +364,7 @@ transition: all ease 0.4s;
         content: '\f00d'
 
     }
-    nav{
+    .nav{
         padding: 10px 30px;
     }
     nav ul{
