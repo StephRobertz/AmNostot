@@ -20,12 +20,14 @@
         <a><img src="images/amlogowhite.png" class="logo"></a>
 
           <!--------------Bar-icon-------------->
-        <div class="toggle" onclick="showMenu()"></div>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
         
         <!---------------------Menu--------------------->
           
 
-        <ul class="menu">
+        <ul class="menu" id="menu">
             <li><a href="#main" class="active">Etusivu</a></li>
             <li><a href="./palvelut.html">Palvelut</a></li>
             <li><a href="#meista">Tietoja meistä</a></li>
@@ -153,11 +155,6 @@
         </div>
      </footer>
 
-     <script>
-
-      function showMenu() {
-        alert("Paskaperse");
-      }
-     </script>
+     <script src="script.js"></script>
   </body>
 </html>

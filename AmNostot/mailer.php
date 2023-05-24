@@ -2,8 +2,9 @@
 
 $name = $_POST["name"];
 $email = $_POST["email"];
-// $subject = $_POST["subject"];
+$tel = $_POST['tel'];
 $message = $_POST["message"];
+$subject = $_POST['subject'];
 
 require "../vendor/autoload.php";
 
@@ -33,10 +34,10 @@ $mail->setFrom($email, $name);
 //mottagarn
 $mail->addAddress("devjohto@gmail.com");
 
-// $mail->Subject = $subject;
-$mail->Body = $message;
-$mail->addReplyTo($email, $name);
 
+$mail->Body = $message;
+$mail->Subject = $subject;
+$mail->addReplyTo($email, $name);
 $mail->send();
 
 header("Location: sent.html");

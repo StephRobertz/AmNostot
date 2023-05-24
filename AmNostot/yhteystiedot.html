@@ -18,12 +18,14 @@
         <a><img src="images/amlogowhite.png" class="logo"></a>
 
         <!--------------Bar-icon-------------->
-        <div class="toggle"></div>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+          </button>
 
         <!--------------Menu-------------->
-        <ul class="menu">
+        <ul class="menu" id="menu">
             <li><a href="./index.html" >Etusivu</a></li>
-            <li><a href="#palvelut">Palvelut</a></li>
+            <li><a href="./palvelut.html">Palvelut</a></li>
             <li><a href="#meista">Tietoja meistä</a></li>
             <li><a href="./yhteystiedot.html" class="active">Yhteystiedot</a></li>            
         </ul>
@@ -33,48 +35,55 @@
       </section>
 
       <section class="contact">
+        <h2 class="p-heading">YHTEYSTIEDOT</h2>
         <div class="content">
-            <h2>Ota yhteyttä</h2>
-            <p>Fittit myky text kan man lägga här så att de sir bra ut</p>
         </div>
         <div class="container">
             <div class="contactInfo">
                 <div class="box">
-                    <div class="icon"><i class="fa-solid fa-map-pin fa-beat"></i></div>
+                    <div class="icon"><i class="fa-solid fa fa-whatsapp fa-beat"></i></div>
                     <div class="text">
-                        <h3>Osoite</h3>
-                        <p>pissgatan 23, 06200 Porvoo</p>
+                        <h3>Mathias</h3>
+                        <a href="https://wa.me/+358401998084/?text=Uusi viesti: " style="color: white; text-decoration: underline;">Lähetä Whatspp</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa fa-whatsapp fa-beat"></i></div>
+                    <div class="text">
+                        <h3>Antti</h3>
+                        <p><a href="https://wa.me/+358401998084/?text=Uusi viesti: " style="color: white; text-decoration: underline;">0401998084</a></p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="icon"><i class="fa-solid fa-envelope fa-beat"></i></div>
                     <div class="text">
                         <h3>Sähköposti</h3>
-                        <p>svartman@gmail.com</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-phone fa-beat"></i></div>
-                    <div class="text">
-                        <h3>Puhelin</h3>
-                        <p>0401998084</p>
+                        <p><a href="mailto:devjohto@gmail.com" style="color: white; text-decoration: underline;">devjohto@gmail.com</a></p>
                     </div>
                 </div>
             </div>
             <div class="contactForm">
                 <form method="POST" action="mailer.php">
-                    <h2>Lähetä viesti</h2>
+                    <h2>Jätä yhteydenottopyyntö</h2>
                     <div class="inputBox">
                         <input type="text" name="name" id="name" required="required">
-                        <span>Koko nimi</span>
+                        <span>Koko nimesi</span>
                     </div>
                     <div class="inputBox">
                         <input type="email" name="email" id="email" required="required">
-                        <span>Sähköposti</span>
+                        <span>Sähköpostisi</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" name="tel" id="tel" required="required">
+                        <span>Puhelinnumerosi</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="subject" name="subject" id="subject" required="required">
+                        <span>Aihe</span>
                     </div>
                     <div class="inputBox">
                         <textarea name="message" id="message" required="required"></textarea>
-                        <span>Viesti</span>
+                        <span>Viestisi</span>
                     </div>
                     <div class="inputBox">
                         <input type="submit" required="required" value="Lähetä">
@@ -85,5 +94,6 @@
       </section>        
      
       <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
 </body>
 </html>
